@@ -15,9 +15,9 @@
           <div class="row">
             <div class="col-md-12 text-center well">
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary btn-lg" data-label="Simple Ajax Pagination" data-pagination="simple" data-toggle="modal" data-target="#myModal">
+              <a name="pagination" type="button" class="btn btn-primary btn-lg" data-label="Simple Ajax Pagination" data-pagination="simple" data-toggle="modal" data-target="#myModal">
                 Open Simple Ajax Pagination Modal
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
 
               $.ajax(options).success(function (res) {
                 if (items == 1) {
-                  $modal.find('.modal-body').html('<ul></ul><div class="text-center"><button type="button" class="btn btn-xs btn-primary" id="load-more">Load more</button></div>');
+                  $modal.find('.modal-body').html('<ul></ul><div class="text-center"><a type="button" class="btn btn-xs btn-primary" name="load-more" id="load-more">Load more</a></div>');
                 }
                 var result = res.data;
                 var content = '';
